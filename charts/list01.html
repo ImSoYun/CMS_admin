@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <aside>
+        <a href="/index.html" class="company_title">LANDSOFT</a>
+        <div class="sidebar">
+            <div class="user_paner">
+                <p>
+                    <img src="/img/common/img_user.jpg" alt="" class="img_center">
+                </p>
+                admin_01
+            </div>
+            <nav id="sideNav"></nav>
+        </div>
+    </aside>
+
+    <div id="contentWrap">
+        <nav id="contentNav">
+            <ul>
+                <li>
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li><a href="/index.html">HOME</a></li>
+            </ul>
+            <div class="breadcrumb">
+                <a href="/index.html">HOME</a>
+                /
+                <b id="breadcrumbTitle"></b>
+            </div>
+        </nav>
+        <div id="contentWrapInner">
+            <h2 id="pageTitle"></h2>
+            <div class="wrap_chartJs">
+                <div>
+                    <p>Area Chart</p>
+                    <canvas id="areaChart"></canvas>
+                </div>
+                <div>
+                    <p>Line Chart</p>
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div>
+                    <p>donut Chart</p>
+                    <canvas id="donutChart"></canvas>
+                </div>
+                <div>
+                    <p>Bar Chart</p>
+                    <canvas id="barChart"></canvas>
+                </div>
+                <div>
+                    <p>Polar Chart</p>
+                    <canvas id="polarChart"></canvas>
+                </div>
+                <div>
+                    <p>Mixeded Bar Chart</p>
+                    <canvas id="mixedChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/layout.js"></script>
+    <script src="/js/chartJs.js"></script>
+    <script>
+        ActiveMenu(1, 0);
+
+        const ctx = document.getElementById('areaChart');
+        var areaChartData = {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [
+                {
+                    label: 'Digital Goods',
+                    backgroundColor: 'rgba(60,141,188,0.9)',
+                    borderColor: 'rgba(60,141,188,0.8)',
+                    pointRadius: false,
+                    pointColor: '#3b8bba',
+                    pointStrokeColor: 'rgba(60,141,188,1)',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                    data: [28, 48, 40, 19, 86, 27, 90],
+                    fill: true
+                },
+                {
+                    label: 'Electronics',
+                    backgroundColor: 'rgba(210, 214, 222, 1)',
+                    borderColor: 'rgba(210, 214, 222, 1)',
+                    pointRadius: false,
+                    pointColor: 'rgba(210, 214, 222, 1)',
+                    pointStrokeColor: '#c1c7d1',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(220,220,220,1)',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: true
+                },
+            ]
+        }
+
+        var areaChartOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false,
+                    }
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display: false,
+                    }
+                }]
+            }
+        }
+
+        // This will get the first returned node in the jQuery collection.
+        new Chart(document.getElementById('areaChart'), {
+            type: 'line',
+            data: areaChartData,
+            options: areaChartOptions
+        })
+
+
+        const monthData = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July'];
+        const labels = monthData;
+        const data = {
+            labels: labels,
+            datasets: [
+                {
+                    label: monthData[0],
+                    backgroundColor: '#f56954',
+                    data: [10, 100, 10, 185, 10, 10, 10],
+                    fill: false,
+                }, {
+                    label: monthData[1],
+                    backgroundColor: '#00a65a',
+                    data: [20, 200, 230, 20, 20, 20, 20],
+                    fill: false,
+                }, {
+                    label: monthData[2],
+                    backgroundColor: '#f39c12',
+                    data: [30, 300, 30, 30, 30, 30, 30],
+                    fill: false,
+                }, {
+                    label: monthData[3],
+                    backgroundColor: '#00c0ef',
+                    data: [40, 400, 40, 40, 40, 40, 40],
+                    fill: false,
+                }, {
+                    label: monthData[4],
+                    backgroundColor: '#3c8dbc',
+                    data: [50, 300, 50, 50, 50, 50, 50],
+                    fill: false,
+                }, {
+                    label: monthData[5],
+                    backgroundColor: '#d2d6de',
+                    data: [60, 200, 60, 60, 60, 60, 60],
+                    fill: false,
+                }, {
+                    label: monthData[6],
+                    backgroundColor: '#007bff',
+                    data: [70, 100, 70, 70, 70, 70, 70],
+                    fill: false,
+                }
+            ]
+        };
+
+        new Chart(document.getElementById('lineChart'), {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Chart.js Bar Chart'
+                    }
+                }
+            },
+        })
+
+        var donutData = {
+            labels: [
+                'Chrome',
+                'IE',
+                'FireFox',
+                'Safari',
+                'Opera',
+                'Navigator',
+            ],
+            datasets: [
+                {
+                    data: [700, 500, 400, 600, 300, 100],
+                    backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+                }
+            ]
+        }
+        var donutOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+        }
+
+        new Chart(document.getElementById('donutChart'), {
+            type: 'doughnut',
+            data: donutData,
+            options: donutOptions
+        })
+
+
+        new Chart(document.getElementById('barChart'), {
+            type: 'bar',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Chart.js Bar Chart'
+                    }
+                }
+            },
+        })
+
+
+
+
+        const polardata = {
+            labels: [
+                'Red',
+                'Green',
+                'Yellow',
+                'Grey',
+                'Blue'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [11, 16, 7, 3, 14],
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(75, 192, 192)',
+                    'rgb(255, 205, 86)',
+                    'rgb(201, 203, 207)',
+                    'rgb(54, 162, 235)'
+                ]
+            }]
+        };
+
+        const config = {
+            type: 'polarArea',
+            data: polardata,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Chart.js Polar Area Chart'
+                    }
+                }
+            },
+        };
+
+        new Chart(document.getElementById('polarChart'), {
+            type: 'polarArea',
+            data: polardata,
+            options: donutOptions
+        })
+
+
+        const mixedChart = new Chart(document.getElementById('mixedChart'), {
+            data: {
+                datasets: [{
+                    type: 'bar',
+                    label: 'Bar Dataset',
+                    data: [10, 20, 30, 40]
+                }, {
+                    type: 'line',
+                    label: 'Line Dataset',
+                    data: [50, 40, 20, 50],
+                }],
+                labels: ['January', 'February', 'March', 'April']
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>

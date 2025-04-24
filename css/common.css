@@ -1,0 +1,12 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+
+a { transition : all .3s ease; color : #111 }
+.img_center { position : absolute; top : 50%; left : 50%; transform: translate(-50%, -50%); width : 100%; max-width : 100%; height : auto; object-fit: cover;}
+
+.btn { border-radius : 0.3rem }
+.btn_xm { padding : .5rem; font-size : 0.8rem  }
+.btn_sm { padding : 1rem }
+.btn_md { padding : 1.5rem }
+.btn_lg { padding : 2rem }
+.ellipsis { text-overflow : ellipsis; overflow : hidden; white-space: nowrap ;}
