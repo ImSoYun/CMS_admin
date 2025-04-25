@@ -27,31 +27,31 @@ const navArr = [
         sub: [
             {
                 title: 'General',
-                href: '#;',
+                href: '/element/list01.html',
             },
             {
                 title: 'Button',
-                href: '#;',
+                href: '/element/list02.html',
             },
             {
                 title: 'Sliders',
-                href: '#;',
+                href: '/element/list03.html',
             },
             {
                 title: 'Modals & Alerts',
-                href: '#;',
+                href: '/element/list04.html',
             },
             {
                 title: 'Navbar & Tabs',
-                href: '#;',
+                href: '/element/list05.html',
             },
             {
                 title: 'Timeline',
-                href: '#;',
+                href: '/element/list06.html',
             },
             {
                 title: 'Ribbons',
-                href: '#;',
+                href: '/element/list07.html',
             },
         ]
     },

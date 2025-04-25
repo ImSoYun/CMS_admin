@@ -1,5 +1,38 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 
+:root {
+    --blue: #007bff;
+    --lightblue : #3c8dbc;
+    --navy : #001f3f;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --fuchsia : #f012be;
+    --maroon : #d81b60;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --olive : #3d9970;
+    --cyan: #17a2b8;
+    --lime : #01ff70;
+    --white: #fff;
+    --dark: #343a40;
+    --black : #000000;
+    --gray: #6c757d;
+    --lightgray: #e9e9e9;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+}
+
+[class^=bg-].disabled { opacity: .65; }
 
 a { transition : all .3s ease; color : #111 }
 .img_center { position : absolute; top : 50%; left : 50%; transform: translate(-50%, -50%); width : 100%; max-width : 100%; height : auto; object-fit: cover;}
@@ -10,3 +43,41 @@ a { transition : all .3s ease; color : #111 }
 .btn_md { padding : 1.5rem }
 .btn_lg { padding : 2rem }
 .ellipsis { text-overflow : ellipsis; overflow : hidden; white-space: nowrap ;}
+
+.flex { display : flex }
+
+.bg-primary { background-color : var(--primary) }
+.bg-secondary { background-color : var(--secondary) }
+.bg-info { background-color : var(--info) }
+.bg-success { background-color : var(--success) }
+.bg-warning { background-color : var(--warning) }
+.bg-danger { background-color : var(--danger) }
+.bg-primary { background-color : var(--primary) }
+.bg-black { background-color : var(--black) }
+.bg-gray-dark { background-color : var(--gray-dark) }
+.bg-gray { background-color : var(--gray) }
+.bg-light { background-color : var(--light) }
+
+
+.bg-indigo { background-color : var(--indigo) }
+.bg-lightblue { background-color : var(--lightblue) }
+.bg-navy { background-color : var(--navy) }
+.bg-purple { background-color : var(--purple) }
+.bg-fuchsia { background-color : var(--fuchsia) }
+.bg-pink { background-color : var(--pink) }
+.bg-maroon { background-color : var(--maroon) }
+.bg-orange { background-color : var(--orange) }
+.bg-lime { background-color : var(--lime) }
+.bg-teal { background-color : var(--teal) }
+.bg-olive { background-color : var(--olive) }
+
+
+.sub_title { padding : 1rem; font-size : 1rem }
+
+
+
+
+
+
+
+

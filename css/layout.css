@@ -23,10 +23,10 @@ aside nav ul ol { margin-top : .3rem; }
 aside .nav_sub.active a { background: rgba(255,255,255,.9); color :#343a40; border-radius : 0.4rem  }
 
 
-#contentWrap { transition : margin .3s ease; margin-left : 250px }
-#contentNav { padding : 1rem; border-bottom : 1px solid #dee2e6; display : flex; justify-content: space-between; align-items: center;  }
+#contentWrap { transition : margin .3s ease; margin-left : 250px; background-color : var(--lightgray) }
+#contentNav { padding : 1rem; border-bottom : 1px solid #dee2e6; display : flex; justify-content: space-between; align-items: center; background-color: #fff; }
 #contentNav ul li{ display : inline-block }
-#contentNav a { color : rgba(0,0,0,.5) }
+#contentNav a { color : rgba(0,0,0,.5); }
 #contentNav a:hover { color : rgba(0,0,0,1) }
 #contentNav ul li + li { margin-left : 1rem }
 #contentNav .breadcrumb { font-size : .8rem }
@@ -34,8 +34,6 @@ aside .nav_sub.active a { background: rgba(255,255,255,.9); color :#343a40; bord
 
 #contentWrapInner { padding : 1.2rem; overflow : hidden }
 #pageTitle { font-size : 1.4rem; margin-bottom : 2rem }
-
-
 
 
 
