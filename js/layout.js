@@ -17,15 +17,7 @@ const navArr = [
             {
                 title: 'Apex',
                 href: '/charts/list02.html',
-            },
-            {
-                title: 'Inline',
-                href: '#;',
-            },
-            {
-                title: 'uPlot',
-                href: '#;',
-            },
+            }
         ]
     },
     {
