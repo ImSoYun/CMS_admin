@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <aside>
+        <a href="/index.html" class="company_title">LANDSOFT</a>
+        <div class="sidebar">
+            <div class="user_paner">
+                <p>
+                    <img src="/img/common/img_user.jpg" alt="" class="img_center">
+                </p>
+                admin_01
+            </div>
+            <nav id="sideNav"></nav>
+        </div>
+    </aside>
+
+    <div id="contentWrap">
+        <nav id="contentNav">
+            <ul>
+                <li>
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li><a href="/index.html">HOME</a></li>
+            </ul>
+            <div class="breadcrumb">
+                <a href="/index.html">HOME</a>
+                /
+                <b id="breadcrumbTitle"></b>
+            </div>
+        </nav>
+        <div id="contentWrapInner">
+            <h2 id="pageTitle"></h2>
+
+            <div class="general_wrap">
+                <h2 class="sub_title"><i class="fas fa-edit"></i>Buttons</h2>
+                <div class="padding1">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Normal</th>
+                                <th>Large <code>.btn_large</code></th>
+                                <th>Small <code>.btn_sm</code></th>
+                                <th>Extra Small <code>.btn_xs</code></th>
+                                <th>Flat <code>.btn_flat</code></th>
+                                <th>Disabled <code>.disabled</code></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block ">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block  btn_large">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block  btn_sm">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block  btn_xs">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn_default btn_block  btn_flat">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block  disabled">Default</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block btn_primary">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_primary btn_large">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_primary btn_sm">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_primary btn_xs">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_primary btn_flat">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_primary disabled">Primary</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_secondary">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_secondary btn_large">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_secondary btn_sm">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_secondary btn_xs">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_secondary btn_flat">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_secondary disabled">Secondary</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block btn_success">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_success btn_large">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_success btn_sm">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_success btn_xs">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_success btn_flat">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_success disabled">Success</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block btn_info">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_info btn_large">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_info btn_sm">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_info btn_xs">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_info btn_flat">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_info disabled">Info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block btn_danger">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_danger btn_large">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_danger btn_sm">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_danger btn_xs">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_danger btn_flat">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_danger disabled">Danger</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block btn_warning">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_warning btn_large">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_warning btn_sm">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_warning btn_xs">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_warning btn_flat">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_warning disabled">Warning</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block btn_light">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_light btn_large">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_light btn_sm">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_light btn_xs">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_light btn_flat">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_light disabled">Light</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_default btn_block btn_black">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_black btn_large">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_black btn_sm">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_black btn_xs">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_black btn_flat">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default btn_block btn_black disabled">Dark</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="general_wrap">
+                <h2 class="sub_title"><i class="fas fa-edit"></i>Outline Buttons</h2>
+                <div class="padding1">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Normal</th>
+                                <th>Large <code>.btn_large</code></th>
+                                <th>Small <code>.btn_sm</code></th>
+                                <th>Extra Small <code>.btn_xs</code></th>
+                                <th>Flat <code>.btn_flat</code></th>
+                                <th>Disabled <code>.disabled</code></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn_default_border btn_block ">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block  btn_large">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block  btn_sm">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block  btn_xs">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn_default_border btn_block  btn_flat">Default</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block  disabled">Default</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_primary_border">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_primary_border btn_large">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_primary_border btn_sm">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_primary_border btn_xs">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_primary_border btn_flat">Primary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_primary_border disabled">Primary</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_secondary_border">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_secondary_border btn_large">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_secondary_border btn_sm">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_secondary_border btn_xs">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_secondary_border btn_flat">Secondary</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_secondary_border disabled">Secondary</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_success_border">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_success_border btn_large">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_success_border btn_sm">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_success_border btn_xs">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_success_border btn_flat">Success</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_success_border disabled">Success</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_info_border">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_info_border btn_large">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_info_border btn_sm">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_info_border btn_xs">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_info_border btn_flat">Info</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_info_border disabled">Info</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_danger_border">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_danger_border btn_large">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_danger_border btn_sm">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_danger_border btn_xs">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_danger_border btn_flat">Danger</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_danger_border disabled">Danger</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_warning_border">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_warning_border btn_large">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_warning_border btn_sm">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_warning_border btn_xs">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_warning_border btn_flat">Warning</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_warning_border disabled">Warning</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_light_border">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_light_border btn_large">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_light_border btn_sm">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_light_border btn_xs">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_light_border btn_flat">Light</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_light_border disabled">Light</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_black_border">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_black_border btn_large">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_black_border btn_sm">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_black_border btn_xs">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_black_border btn_flat">Dark</button>
+                                </td>
+                                <td>
+                                    <button type="button"
+                                        class="btn btn_default_border btn_block btn_black_border disabled">Dark</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="general_wrap">
+                <h2 class="sub_title"><i class="fas fa-edit"></i>Application Buttons</h2>
+                <div class="padding1">
+                    <a class="btn btn_app">
+                        <i class="fas fa-edit"></i> Edit
+                    </a>
+                    <a class="btn btn_app">
+                        <i class="fas fa-edit"></i> Edit
+                      </a>
+                      <a class="btn btn_app">
+                        <i class="fas fa-play"></i> Play
+                      </a>
+                      <a class="btn btn_app">
+                        <i class="fas fa-pause"></i> Pause
+                      </a>
+                      <a class="btn btn_app">
+                        <i class="fas fa-save"></i> Save
+                      </a>
+                      <a class="btn btn_app">
+                        <span class="badge bg_warning">3</span>
+                        <i class="fas fa-bullhorn"></i> Notifications
+                      </a>
+                      <a class="btn btn_app">
+                        <span class="badge bg_success">300</span>
+                        <i class="fas fa-barcode"></i> Products
+                      </a>
+                      <a class="btn btn_app">
+                        <span class="badge bg_success">891</span>
+                        <i class="fas fa-users"></i> Users
+                      </a>
+                      <a class="btn btn_app">
+                        <span class="badge bg_teal">67</span>
+                        <i class="fas fa-inbox"></i> Orders
+                      </a>
+                      <a class="btn btn_app">
+                        <span class="badge bg_info">12</span>
+                        <i class="fas fa-envelope"></i> Inbox
+                      </a>
+                      <a class="btn btn_app">
+                        <span class="badge bg_danger">531</span>
+                        <i class="fas fa-heart"></i> Likes
+                      </a>
+      
+                      <a class="btn btn_app bg_secondary">
+                        <span class="badge bg_success">300</span>
+                        <i class="fas fa-barcode"></i> Products
+                      </a>
+                      <a class="btn btn_app bg_success">
+                        <span class="badge bg_purple">891</span>
+                        <i class="fas fa-users"></i> Users
+                      </a>
+                      <a class="btn btn_app bg_danger">
+                        <span class="badge bg_teal">67</span>
+                        <i class="fas fa-inbox"></i> Orders
+                      </a>
+                      <a class="btn btn_app bg_warning">
+                        <span class="badge bg_info">12</span>
+                        <i class="fas fa-envelope"></i> Inbox
+                      </a>
+                      <a class="btn btn_app bg_info">
+                        <span class="badge bg_danger">531</span>
+                        <i class="fas fa-heart"></i> Likes
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+        ActiveMenu(2, 3);
+    </script>
+</body>
+
+</html>

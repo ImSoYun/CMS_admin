@@ -45,28 +45,28 @@
                     <h3 class="sub_title">Theme Colors</h3>
                     <div class="flex">
                         <div class="palette_inner">
-                            <p class="bg-primary">Primary <span>#007bff</span></p>
-                            <p class="bg-primary disabled">disabled</p>
+                            <p class="bg_primary">Primary <span>#007bff</span></p>
+                            <p class="bg_primary disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
-                            <p class="bg-secondary">Secondary <span>#6c757d</span></p>
-                            <p class="bg-secondary disabled">disabled</p>
+                            <p class="bg_secondary">Secondary <span>#6c757d</span></p>
+                            <p class="bg_secondary disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
-                            <p class="bg-info">Info <span>#17a2b8</span></p>
-                            <p class="bg-info disabled">disabled</p>
+                            <p class="bg_info">Info <span>#17a2b8</span></p>
+                            <p class="bg_info disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
-                            <p class="bg-success">Success <span>#28a745</span></p>
-                            <p class="bg-success disabled">disabled</p>
+                            <p class="bg_success">Success <span>#28a745</span></p>
+                            <p class="bg_success disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
-                            <p class="bg-warning">Warning <span>#ffc107</span></p>
-                            <p class="bg-warning disabled">disabled</p>
+                            <p class="bg_warning">Warning <span>#ffc107</span></p>
+                            <p class="bg_warning disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
-                            <p class="bg-danger">Danger <span>#dc3545</span></p>
-                            <p class="bg-danger disabled">disabled</p>
+                            <p class="bg_danger">Danger <span>#dc3545</span></p>
+                            <p class="bg_danger disabled">disabled</p>
                         </div>
                     </div>
                 </div>
@@ -74,16 +74,16 @@
                     <h3 class="sub_title">Black/White</h3>
                     <div class="flex">
                         <div class="palette_inner">
-                            <p class="bg-black">Black <span>#000000</span></p>
-                            <p class="bg-black disabled">disabled</p>
+                            <p class="bg_black">Black <span>#000000</span></p>
+                            <p class="bg_black disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
-                            <p class="bg-gray-dark color-palette">Gray Dark<span>#343a40</span></p>
-                            <p class="bg-gray-dark disabled">disabled</p>
+                            <p class="bg_graydark color-palette">Gray Dark<span>#343a40</span></p>
+                            <p class="bg_graydark disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
-                            <p class="bg-gray">Gray<span>#6c757d</span></p>
-                            <p class="bg-gray disabled">disabled</p>
+                            <p class="bg_gray">Gray<span>#6c757d</span></p>
+                            <p class="bg_gray disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
                             <p class="bg-light">Light <span>#f8f9fa</span></p>
@@ -96,11 +96,11 @@
                     <div class="flex">
                         <div class="palette_inner">
                             <p class="bg-indigo">Indigo<span>#6610f2</span></p>
-                            <p class="bg-primary disabled">disabled</p>
+                            <p class="bg_primary disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
-                            <p class="bg-lightblue color-palette">Lightblue<span>#3c8dbc</span></p>
-                            <p class="bg-lightblue disabled">disabled</p>
+                            <p class="bg_lightblue color-palette">Lightblue<span>#3c8dbc</span></p>
+                            <p class="bg_lightblue disabled">disabled</p>
                         </div>
                         <div class="palette_inner">
                             <p class="bg-navy">Navy<span>#001f3f</span></p>
@@ -200,8 +200,8 @@
                     <div class="tab_area">
                         <ul class="tab_head tab_head_type01">
                             <li class="nav_li active" onclick="tabCtrl(this, 0)"><a href="#;">tab 01</a></li>
-                            <li class="nav_li" onclick="tabCtrl(this, 1)"><a href="#;" >tab 02</a></li>
-                            <li class="nav_li" onclick="tabCtrl(this, 2)"><a href="#;" >tab 03</a></li>
+                            <li class="nav_li" onclick="tabCtrl(this, 1)"><a href="#;">tab 02</a></li>
+                            <li class="nav_li" onclick="tabCtrl(this, 2)"><a href="#;">tab 03</a></li>
                         </ul>
                         <div class="tab_content active">tab01 content</div>
                         <div class="tab_content">tab02 content</div>
@@ -209,10 +209,10 @@
                     </div>
                     <div class="tab_area">
                         <ul class="tab_head tab_head_type02">
-                            <li class="nav_li active" onclick="tabCtrl(this, 0)"><a href="#;" >tab 01</a>
+                            <li class="nav_li active" onclick="tabCtrl(this, 0)"><a href="#;">tab 01</a>
                             </li>
-                            <li class="nav_li" onclick="tabCtrl(this, 1)"><a href="#;" >tab 02</a></li>
-                            <li class="nav_li" onclick="tabCtrl(this, 2)"><a href="#;" >tab 03</a></li>
+                            <li class="nav_li" onclick="tabCtrl(this, 1)"><a href="#;">tab 02</a></li>
+                            <li class="nav_li" onclick="tabCtrl(this, 2)"><a href="#;">tab 03</a></li>
                         </ul>
                         <div class="tab_content active">tab01 content</div>
                         <div class="tab_content">tab02 content</div>
@@ -231,7 +231,8 @@
                             <dd>A description list is perfect for defining terms.</dd>
                             <dt>Euismod</dt>
                             <dd>
-                                Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br/><br/>Donec id elit non mi porta gravida at eget metus.
+                                Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec
+                                elit.<br /><br />Donec id elit non mi porta gravida at eget metus.
                             </dd>
                             <dt>Malesuada porta</dt>
                             <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
@@ -246,11 +247,159 @@
                             <dd>A description list is perfect for defining terms.</dd>
                             <dt>Euismod</dt>
                             <dd>
-                                Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br/><br/>Donec id elit non mi porta gravida at eget metus.
+                                Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec
+                                elit.<br /><br />Donec id elit non mi porta gravida at eget metus.
                             </dd>
                             <dt>Malesuada porta</dt>
                             <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
                         </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="general_wrap">
+                <h2 class="sub_title"><i class="fas fa-tag"></i>Paging</h2>
+                <div class="inner">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#" class="active">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                      </div>
+
+
+                    <div class="paging_wrap xlarge">
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li class="active"><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="paging_wrap large">
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li class="active"><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="paging_wrap middle">
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li class="active"><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="paging_wrap small">
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li class="active"><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="paging_wrap xsmall">
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li class="active"><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
