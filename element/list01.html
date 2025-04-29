@@ -145,44 +145,120 @@
             <div class="general_wrap flex">
                 <div class="inner">
                     <h2 class="sub_title"><i class="fas fa-tag"></i>Alerts</h2>
-                    <div class="alert_wrap alert-danger">
-                        <h5><i class="icon fas fa-ban"></i> Alert!</h5>
-                        Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my
-                        entire
-                        soul, like these sweet mornings of spring which I enjoy with my whole heart.
-                    </div>
-                    <div class="alert_wrap alert-info">
-                        <h5><i class="icon fas fa-info"></i> Alert!</h5>
-                        Info alert preview. This alert is dismissable.
-                    </div>
-                    <div class="alert_wrap alert-warning">
-                        <h5><i class="icon fas fa-exclamation-triangle"></i> Alert!</h5>
-                        Warning alert preview. This alert is dismissable.
-                    </div>
-                    <div class="alert_wrap alert-success">
-                        <h5><i class="icon fas fa-check"></i> Alert!</h5>
-                        Success alert preview. This alert is dismissable.
+                    <div class="alert_wrap">
+                        <div class="alert_inner alert-danger">
+                            <h5><i class="icon fas fa-ban"></i> Alert!</h5>
+                            Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession
+                            of my
+                            entire
+                            soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                        </div>
+                        <div class="alert_inner alert-info">
+                            <h5><i class="icon fas fa-info"></i> Alert!</h5>
+                            Info alert preview. This alert is dismissable.
+                        </div>
+                        <div class="alert_inner alert-warning">
+                            <h5><i class="icon fas fa-exclamation-triangle"></i> Alert!</h5>
+                            Warning alert preview. This alert is dismissable.
+                        </div>
+                        <div class="alert_inner alert-success">
+                            <h5><i class="icon fas fa-check"></i> Alert!</h5>
+                            Success alert preview. This alert is dismissable.
+                        </div>
                     </div>
                 </div>
                 <div class="inner">
                     <h2 class="sub_title"><i class="fas fa-tag"></i>Callouts</h2>
-                    <div class="callout callout-danger">
-                        <h5>I am a danger callout!</h5>
-      
-                        <p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire
-                          soul,
-                          like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                      </div>
+
+                    <div class="callout_wrap">
+                        <div class="callout_inner callout-danger">
+                            <h5>I am a danger callout!</h5>
+                            <p>There is a problem that we need to fix. A wonderful serenity has taken possession of my
+                                entire
+                                soul,
+                                like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                        </div>
+                        <div class="callout_inner callout-info">
+                            <h5>I am a danger callout!</h5>
+                            <p>Follow the steps to continue to payment.</p>
+                        </div>
+                        <div class="callout_inner callout-warning">
+                            <h5>I am a danger callout!</h5>
+                            <p>This is a yellow callout.</p>
+                        </div>
+                        <div class="callout_inner callout-success">
+                            <h5>I am a danger callout!</h5>
+                            <p>This is a green callout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="general_wrap">
+                <h2 class="sub_title"><i class="fas fa-tag"></i>Tabs</h2>
+                <div class="padding1">
+                    <div class="tab_area">
+                        <ul class="tab_head tab_head_type01">
+                            <li class="nav_li active" onclick="tabCtrl(this, 0)"><a href="#;">tab 01</a></li>
+                            <li class="nav_li" onclick="tabCtrl(this, 1)"><a href="#;" >tab 02</a></li>
+                            <li class="nav_li" onclick="tabCtrl(this, 2)"><a href="#;" >tab 03</a></li>
+                        </ul>
+                        <div class="tab_content active">tab01 content</div>
+                        <div class="tab_content">tab02 content</div>
+                        <div class="tab_content">tab03 content</div>
+                    </div>
+                    <div class="tab_area">
+                        <ul class="tab_head tab_head_type02">
+                            <li class="nav_li active" onclick="tabCtrl(this, 0)"><a href="#;" >tab 01</a>
+                            </li>
+                            <li class="nav_li" onclick="tabCtrl(this, 1)"><a href="#;" >tab 02</a></li>
+                            <li class="nav_li" onclick="tabCtrl(this, 2)"><a href="#;" >tab 03</a></li>
+                        </ul>
+                        <div class="tab_content active">tab01 content</div>
+                        <div class="tab_content">tab02 content</div>
+                        <div class="tab_content">tab03 content</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="general_wrap flex">
+                <div class="inner">
+                    <h2 class="sub_title"><i class="fas fa-tag"></i>Description</h2>
+
+                    <div class="description_wrap">
+                        <dl>
+                            <dt>Description lists</dt>
+                            <dd>A description list is perfect for defining terms.</dd>
+                            <dt>Euismod</dt>
+                            <dd>
+                                Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br/><br/>Donec id elit non mi porta gravida at eget metus.
+                            </dd>
+                            <dt>Malesuada porta</dt>
+                            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="inner">
+                    <h2 class="sub_title"><i class="fas fa-tag"></i>Description Horizontal</h2>
+                    <div class="description_wrap">
+                        <dl class="horizontal_dl">
+                            <dt>Description lists</dt>
+                            <dd>A description list is perfect for defining terms.</dd>
+                            <dt>Euismod</dt>
+                            <dd>
+                                Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br/><br/>Donec id elit non mi porta gravida at eget metus.
+                            </dd>
+                            <dt>Malesuada porta</dt>
+                            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- https://apexcharts.com/javascript-chart-demos/dashboards/material/ -->
-
-
-
     <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
     <script>
         ActiveMenu(2, 2);
     </script>
