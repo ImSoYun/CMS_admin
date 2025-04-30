@@ -7,3 +7,9 @@ const tabCtrl = (e, idx) => {
     tabLi[idx].classList.add('active');
     tabContent[idx].classList.add('active');
 }
+
+
+const SwiperCtrl = ( target, opt ) => {
+    let swiper = new Swiper(target, opt );
+}
+

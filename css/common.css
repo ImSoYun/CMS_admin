@@ -95,7 +95,7 @@ a { transition : all .3s ease; color : #111 }
 .btn_app:hover { color : #333 } 
 .btn_app>.fa, .btn_app>.fab, .btn_app>.fad, .btn_app>.fal, .btn_app>.far, .btn_app>.fas, .btn_app>.ion, .btn_app>.svg-inline--fa { display : block; font-weight: bold; font-size : 20px } 
 .btn_app > .badge { font-size: 10px; font-weight: 400; position: absolute; right: -10px; top: -3px; } 
-.badge { display: inline-block; padding: .25em .4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25rem; transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; color : #fff } 
+.badge { display: inline-block; padding: .25em .4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25rem; transition: color .15s ease-in-out, background-colo    r .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; color : #fff } 
 .sub_title { padding : 1rem; font-size : 1rem } 
 
 
