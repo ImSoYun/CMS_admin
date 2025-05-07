@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <aside>
+        <a href="/index.html" class="company_title">LANDSOFT</a>
+        <div class="sidebar">
+            <div class="user_paner">
+                <p>
+                    <img src="/img/common/img_user.jpg" alt="" class="img_center">
+                </p>
+                admin_01
+            </div>
+            <nav id="sideNav"></nav>
+        </div>
+    </aside>
+
+    <div id="contentWrap">
+        <nav id="contentNav">
+            <ul>
+                <li>
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li><a href="/index.html">HOME</a></li>
+            </ul>
+            <div class="breadcrumb">
+                <a href="/index.html">HOME</a>
+                /
+                <b id="breadcrumbTitle"></b>
+            </div>
+        </nav>
+        <div id="contentWrapInner">
+            <h2 id="pageTitle"></h2>
+
+            <div class="element_wrap auto_height">
+                <div>
+                    <p class="mini_title">Example</p>
+                    <div class="form_type_01">
+                        <label for="type01Email">Email</label>
+                        <input type="email" class="form_control" id="type01Email" placeholder="이메일을 입력해주세요.">
+                    </div>
+                    <div class="form_type_01">
+                        <label for="type01Password">Password</label>
+                        <input type="password" class="form_control" id="type01Password" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <div class="form_type_01">
+                        <label for="type01Tel">Tel</label>
+                        <input type="tel" class="form_control" id="type01Tel" placeholder="연락처를 입력해주세요(숫자만 입력)." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  >
+                    </div>
+                    <div class="form_type_01">
+                        <label for="type01Input">Input + Button</label>
+                        <div class="form_wrap">
+                            <input type="text" class="form_control" id="type01Input" placeholder="Text">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="form_type_01">
+                        <label for="type01Textarea">Textarea</label>
+                        <textarea name="" class="form_control" id="type01Textarea" placeholder="Textarea"></textarea>
+                    </div>
+                </div>
+               
+                <div>
+                    <p class="mini_title">Input</p>
+                    <div class="form_type_02">
+                        <label for="type02Email">Email</label>
+                        <input type="email" class="form_control" id="type02Email" placeholder="이메일을 입력해주세요.">
+                    </div>
+                    <div class="form_type_02">
+                        <label for="type02Password">Password</label>
+                        <input type="password" class="form_control" id="type02Password" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <div class="form_type_02">
+                        <label for="type02Tel">Tel</label>
+                        <input type="tel" class="form_control" id="type02Tel" placeholder="연락처를 입력해주세요(숫자만 입력)." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  >
+                    </div>
+                    <div class="form_type_02">
+                        <label for="type02Input">Input + Button</label>
+                        <div class="form_wrap">
+                            <input type="text" class="form_control" id="type02Input" placeholder="Text">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="form_type_02">
+                        <label for="type02Textarea">Textarea</label>
+                        <textarea name="" class="form_control" id="type02Textarea" placeholder="Textarea"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <p class="mini_title">Horizontal</p>
+                    <div class="form_type_03">
+                        <label for="type03Email">Email</label>
+                        <input type="email" class="form_control" id="type03Email" placeholder="이메일을 입력해주세요.">
+                    </div>
+                    <div class="form_type_03">
+                        <label for="type03Password">Password</label>
+                        <input type="password" class="form_control" id="type03Password" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <div class="form_type_03">
+                        <label for="type03Tel">Tel</label>
+                        <input type="tel" class="form_control" id="type03Tel" placeholder="연락처를 입력해주세요(숫자만 입력)." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  >
+                    </div>
+                    <div class="form_type_03">
+                        <label for="type03Input">Input + Button</label>
+                        <div class="form_wrap">
+                            <input type="text" class="form_control" id="type03Input" placeholder="Text">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="form_type_03">
+                        <label for="type03Textarea">Textarea</label>
+                        <textarea name="" class="form_control" id="type03Textarea" placeholder="Textarea"></textarea>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div>
+                    <p class="mini_title">Different Height</p>
+                    <input class="form_control form_control_lg" type="text" placeholder=".form_control_lg">
+                    <br/>
+                    <input class="form_control" type="text" placeholder="Default input">
+                    <br/>
+                    <input class="form_control form_control_sm" type="text" placeholder=".form_control_sm">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+        ActiveMenu(3, 0);
+    </script>
+</body>
+
+</html>

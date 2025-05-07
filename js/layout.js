@@ -38,21 +38,9 @@ const navArr = [
                 href: '/element/list03.html',
             },
             {
-                title: 'Modals & Alerts',
+                title: 'Modals',
                 href: '/element/list04.html',
-            },
-            {
-                title: 'Navbar & Tabs',
-                href: '/element/list05.html',
-            },
-            {
-                title: 'Timeline',
-                href: '/element/list06.html',
-            },
-            {
-                title: 'Ribbons',
-                href: '/element/list07.html',
-            },
+            }
         ]
     },
     {
@@ -62,7 +50,7 @@ const navArr = [
         sub: [
             {
                 title: 'General',
-                href: '#;',
+                href: '/form/list01.html',
             },
             {
                 title: 'Advanced',
@@ -122,7 +110,7 @@ for ( const i of navLinkBtn ){
 
 const ActiveMenu = ( idx, sub ) => {
     let nav = document.querySelectorAll('.nav_li')
-    let subnav = document.querySelectorAll('.nav_sub')
+    let subnav = nav[idx].querySelectorAll('.nav_sub');
     nav[idx].classList.add('active');
     if ( sub != null ){
         subnav[sub].classList.add('active');

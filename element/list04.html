@@ -39,26 +39,100 @@
         </nav>
         <div id="contentWrapInner">
             <h2 id="pageTitle"></h2>
-
-            <div class="element_wrap flex">
-                <div class="inner">
-                    <p>Modal</p>
-                    <div class="swiper defaultSlide">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
-                            <div class="swiper-slide">Slide 5</div>
-                            <div class="swiper-slide">Slide 6</div>
-                            <div class="swiper-slide">Slide 7</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 9</div>
-                        </div>
-                    </div>
+            <div class="general_wrap">
+                <h2 class="sub_title"><i class="fas fa-edit"></i>Modal Examples</h2>
+                <div class="padding1">
+                    <button type="button" class="btn btn_default" onclick="modalCtrl.open(this)" data-target="#defaultModal">Default Modal</button>
+                    <button type="button" class="btn btn_default" onclick="modalCtrl.open(this)" data-target="#smallModal">Small Modal</button>
+                    <button type="button" class="btn btn_default" onclick="modalCtrl.open(this)" data-target="#mediumModal">Medium Modal</button>
+                    <button type="button" class="btn btn_default" onclick="modalCtrl.open(this)" data-target="#largeModal">Large Modal</button>
                 </div>
             </div>
+        </div>
+    </div>
 
+    <div id="dim"></div>
+    <div id="defaultModal" class="modal_wrap">
+        <div class="modal_inner">
+            <div class="modal_head">
+                Modal Title<a href="#;" onclick="modalCtrl.close()">x</a>
+            </div>
+            <div class="modal_content">
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+            </div>
+            <div class="modal_foot">
+                <button type="button" class="btn btn_default btn_primary">Button</button>
+                <button type="button" class="btn btn_default btn_success">Button</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="smallModal" class="modal_wrap">
+        <div class="modal_inner modal_small">
+            <div class="modal_head">
+                Modal Title<a href="#;" onclick="modalCtrl.close()">x</a>
+            </div>
+            <div class="modal_content">
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+            </div>
+            <div class="modal_foot">
+                <button type="button" class="btn btn_default btn_primary">Button</button>
+                <button type="button" class="btn btn_default btn_success">Button</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mediumModal" class="modal_wrap">
+        <div class="modal_inner modal_medium">
+            <div class="modal_head">
+                Modal Title<a href="#;" onclick="modalCtrl.close()">x</a>
+            </div>
+            <div class="modal_content">
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+            </div>
+            <div class="modal_foot">
+                <button type="button" class="btn btn_default btn_primary">Button</button>
+                <button type="button" class="btn btn_default btn_success">Button</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="largeModal" class="modal_wrap">
+        <div class="modal_inner modal_large">
+            <div class="modal_head">
+                Modal Title<a href="#;" onclick="modalCtrl.close()">x</a>
+            </div>
+            <div class="modal_content">
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+                Modal Content<br/>
+            </div>
+            <div class="modal_foot">
+                <button type="button" class="btn btn_default btn_primary">Button</button>
+                <button type="button" class="btn btn_default btn_success">Button</button>
+            </div>
         </div>
     </div>
 
@@ -66,7 +140,7 @@
     <script src="/js/layout.js"></script>
     <script src="/js/script.js"></script>
     <script>
-        ActiveMenu(2, 5);
+        ActiveMenu(2, 3);
     </script>
 </body>
 
