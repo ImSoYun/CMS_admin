@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <aside>
+        <a href="/index.html" class="company_title"><span><img src="/img/common/logo.png" alt=""></span>LANDSOFT</a>
+        <div class="sidebar">
+            <div class="user_paner">
+                <p>
+                    <img src="/img/common/img_user.jpg" alt="" class="img_center">
+                </p>
+                admin_01
+            </div>
+            <nav id="sideNav"></nav>
+        </div>
+    </aside>
+
+    <div id="contentWrap">
+        <nav id="contentNav">
+            <ul>
+                <li>
+                    <a id="navToggle" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li><a href="/index.html">HOME</a></li>
+            </ul>
+            <div class="breadcrumb">
+                <a href="/index.html">HOME</a>
+                /
+                <b id="breadcrumbTitle"></b>
+            </div>
+        </nav>
+        <div id="contentWrapInner">
+            <h2 id="pageTitle"></h2>
+
+            <div class="element_wrap auto_height">
+                <div>
+                    <p class="mini_title">Border Table</p>
+                    <table class="table table_border">
+                        <colgroup>
+                            <col width="40px">
+                            <col width="*">
+                            <col width="*">
+                            <col width="100px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Task</th>
+                                <th>Progress</th>
+                                <th>Label</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Update software</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_danger" style="width: 55%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_danger">55%</span></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Clean database</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_warning" style="width: 70%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_warning">70%</span></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Cron job running</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_primary" style="width: 30%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_primary">30%</span></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Fix and squish bugs</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_success" style="width: 90%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_success">90%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <table class="table table_full">
+                        <p class="mini_title">Full Table</p>
+
+                        <colgroup>
+                            <col width="40px">
+                            <col width="*">
+                            <col width="*">
+                            <col width="100px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Task</th>
+                                <th>Progress</th>
+                                <th>Label</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Update software</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_danger" style="width: 55%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_danger">55%</span></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Clean database</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_warning" style="width: 70%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_warning">70%</span></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Cron job running</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_primary" style="width: 30%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_primary">30%</span></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Fix and squish bugs</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_success" style="width: 90%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_success">90%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <p class="mini_title">Striped Table</p>
+
+                    <table class="table table_striped">
+                        <colgroup>
+                            <col width="40px">
+                            <col width="*">
+                            <col width="*">
+                            <col width="100px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Task</th>
+                                <th>Progress</th>
+                                <th>Label</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Update software</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_danger" style="width: 55%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_danger">55%</span></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Clean database</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_warning" style="width: 70%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_warning">70%</span></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Cron job running</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_primary" style="width: 30%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_primary">30%</span></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Fix and squish bugs</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_success" style="width: 90%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_success">90%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div>
+                    <p class="mini_title">Hover Table</p>
+
+                    <table class="table table_full table_hover">
+                        <colgroup>
+                            <col width="40px">
+                            <col width="*">
+                            <col width="*">
+                            <col width="100px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Task</th>
+                                <th>Progress</th>
+                                <th>Label</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Update software</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_danger" style="width: 55%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_danger">55%</span></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Clean database</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_warning" style="width: 70%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_warning">70%</span></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Cron job running</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_primary" style="width: 30%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_primary">30%</span></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Fix and squish bugs</td>
+                                <td>
+                                    <div class="progress progress_xs">
+                                        <div class="progress_bar bg_success" style="width: 90%"></div>
+                                    </div>
+                                </td>
+                                <td><span class="badge bg_success">90%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+            <div class="general_wrap" style="margin-top : 1rem; height:300px; overflow : auto">
+                <h2 class="sub_title">Fixed Header Table</h2>
+                <table class="table table_full table_head_fix">
+                    <colgroup>
+                        <col width="40px">
+                        <col width="*">
+                        <col width="*">
+                        <col width="100px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Task</th>
+                            <th>Progress</th>
+                            <th>Label</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Update software</td>
+                            <td>
+                                <div class="progress progress_xs">
+                                    <div class="progress_bar bg_danger" style="width: 55%"></div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg_danger">55%</span></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Clean database</td>
+                            <td>
+                                <div class="progress progress_xs">
+                                    <div class="progress_bar bg_warning" style="width: 70%"></div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg_warning">70%</span></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Cron job running</td>
+                            <td>
+                                <div class="progress progress_xs">
+                                    <div class="progress_bar bg_primary" style="width: 30%"></div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg_primary">30%</span></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Fix and squish bugs</td>
+                            <td>
+                                <div class="progress progress_xs">
+                                    <div class="progress_bar bg_success" style="width: 90%"></div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg_success">90%</span></td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Update software</td>
+                            <td>
+                                <div class="progress progress_xs">
+                                    <div class="progress_bar bg_danger" style="width: 55%"></div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg_danger">55%</span></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Clean database</td>
+                            <td>
+                                <div class="progress progress_xs">
+                                    <div class="progress_bar bg_warning" style="width: 70%"></div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg_warning">70%</span></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Cron job running</td>
+                            <td>
+                                <div class="progress progress_xs">
+                                    <div class="progress_bar bg_primary" style="width: 30%"></div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg_primary">30%</span></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Fix and squish bugs</td>
+                            <td>
+                                <div class="progress progress_xs">
+                                    <div class="progress_bar bg_success" style="width: 90%"></div>
+                                </div>
+                            </td>
+                            <td><span class="badge bg_success">90%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="general_wrap">
+                <h2 class="sub_title">Expand Table</h2>
+                <table class="table table_border table_hover">
+                    <colgroup>
+                        <col width="100">
+                        <col width="200">
+                        <col width="200">
+                        <col width="200">
+                        <col width="*">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>User</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="expand_head" onclick="expandTable(this)">
+                            <td>183</td>
+                            <td>John Doe</td>
+                            <td>11-7-2014</td>
+                            <td>Approved</td>
+                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                        </tr>
+                        <tr class="expand_body">
+                            <td colspan="5">
+                                <div>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="expand_head" onclick="expandTable(this)">
+                            <td>219</td>
+                            <td>Alexander Pierce</td>
+                            <td>11-7-2014</td>
+                            <td>Pending</td>
+                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                        </tr>
+                        <tr class="expand_body">
+                            <td colspan="5">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="expand_head" onclick="expandTable(this)">
+                            <td>657</td>
+                            <td>Alexander Pierce</td>
+                            <td>11-7-2014</td>
+                            <td>Approved</td>
+                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                        </tr>
+                        <tr class="expand_body">
+                            <td colspan="5">
+                                <p style="">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="expand_head" onclick="expandTable(this)">
+                            <td>175</td>
+                            <td>Mike Doe</td>
+                            <td>11-7-2014</td>
+                            <td>Denied</td>
+                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                        </tr>
+                        <tr class="expand_body">
+                            <td colspan="5">
+                                <p style="">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="expand_head" onclick="expandTable(this)">
+                            <td>134</td>
+                            <td>Jim Doe</td>
+                            <td>11-7-2014</td>
+                            <td>Approved</td>
+                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                        </tr>
+                        <tr class="expand_body">
+                            <td colspan="5">
+                                <p style="">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+        ActiveMenu(4, 0);
+    </script>
+</body>
+
+</html>

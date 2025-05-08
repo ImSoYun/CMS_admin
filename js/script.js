@@ -36,3 +36,7 @@ const activeCtrl = {
         target.classList.remove('active');
     }
 }
+
+const expandTable = ( e ) => {
+    e.nextSibling.nextSibling.classList.toggle('active');
+}

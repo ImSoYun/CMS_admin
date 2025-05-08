@@ -53,16 +53,8 @@ const navArr = [
                 href: '/form/list01.html',
             },
             {
-                title: 'Advanced',
-                href: '#;',
-            },
-            {
                 title: 'Editor',
-                href: '#;',
-            },
-            {
-                title: 'Validation',
-                href: '#;',
+                href: '/form/list02.html',
             }
         ]
     },
@@ -73,7 +65,7 @@ const navArr = [
         sub: [
             {
                 title: 'Simple',
-                href: '#;',
+                href: '/table/list01.html',
             },
             {
                 title: 'DataTable',
@@ -87,13 +79,14 @@ const navArr = [
     },
 ];
 
+
 let navTxt = `<ul>`;
 for (const i of navArr) {
     navTxt += `<li class="nav_li">
-         <a href="${i.href}" class="nav_link"><i class="nav-icon fas ${i.icon}"></i>${i.title}<span><i class="right ${i.sub != null && 'fas fa-angle-left'}"></i></span></a>
+         <a href="${i.href}" class="nav_link"><i class="nav-icon fas ${i.icon}"></i><p>${i.title}</p><span><i class="right ${i.sub != null && 'fas fa-angle-left'}"></i></span></a>
          <ol>`
         if (i.sub != null) {
-            for (const j of i.sub) navTxt += `<li class="nav_sub"><a href="${j.href}">${j.title}</a></li>`;
+            for (const j of i.sub) navTxt += `<li class="nav_sub"><a href="${j.href}"><i class="far">-</i><p>${j.title}</p></a></li>`;
         }
         navTxt += `</ol>
         </li>`;
@@ -120,5 +113,42 @@ const ActiveMenu = ( idx, sub ) => {
     }
     document.getElementById('breadcrumbTitle').innerHTML = nav[idx].children[0].innerHTML;
     document.getElementById('pageTitle').innerHTML = nav[idx].children[0].innerHTML;
-
 }
+
+const ToggleNav = () => {
+    let toggleBtn = document.getElementById('navToggle');
+    toggleBtn.addEventListener( 'click', () => {
+        document.getElementsByTagName('body')[0].classList.toggle('active')
+    });
+}
+
+ToggleNav();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
