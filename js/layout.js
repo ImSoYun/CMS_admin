@@ -69,11 +69,7 @@ const navArr = [
             },
             {
                 title: 'DataTable',
-                href: '#;',
-            },
-            {
-                title: 'JSGrid',
-                href: '#;',
+                href: '/table/list02.html',
             }
         ]
     },

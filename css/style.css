@@ -255,6 +255,8 @@ input.form_control.form_control_sm { line-height : 35px; font-size : .8rem }
 .expand_body.active { display : table-row !important }
 
 
+.overflow_height > div { overflow : hidden auto }
+
 
 
 
