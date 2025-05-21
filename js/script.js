@@ -12,7 +12,7 @@ const tabCtrl = (e, idx) => {
 const SwiperCtrl = ( target, opt ) => {
     let swiper = new Swiper(target, opt );
 }
-
+ 
 const modalCtrl = {
     open : (e) => {
         let modalTarget= document.querySelector(e.getAttribute('data-target'));
